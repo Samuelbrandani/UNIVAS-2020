@@ -12,17 +12,17 @@ Gabriel Ricieri Martines Riberio
 
 Projeto
 
-1) O aplicativo base-se em um login para o aluno, salvando os dados do mesmo para facilitar um futuro login.
+- O aplicativo base-se em um login para o aluno, salvando os dados do mesmo para facilitar um futuro login.
     - Implementar login por digital (ideia)
 
-2) Após o login será um dashboard com:
-    a)Uma listagem das notícias
-    b)um sidebar para navegação entre as telas:
-        1) Notas parciais
-        2) Provas Agendadas 
-        3) Frequência
-        4) Central de Mensagens
-        5) Sair
+- Após o login será um dashboard com:
+    - Uma listagem das notícias
+    - um sidebar para navegação entre as telas:
+        - Notas parciais
+        - Provas Agendadas 
+        - Frequência
+        - Central de Mensagens
+        - Sair
 
 
 
