@@ -3,7 +3,7 @@ Aplicativo de consulta para os alunos da UNIVAS
 
 Desenvolvido pelos alunos de sistemas de informação - 5° período
 - Samuel Alves Brandani Tenório
-- Luiz Texeira
+- Luiz Fhelipy Rodrigues Teixeira
 - Gabriel Ricieri Martines Riberio
 
 - Aplicativo desenvolvido em Flutter com backend em PHP usando o framework Laravel/Slim consumindo uma VIEW que será fornecida pela equipe de TI da UNIVAS/FUVS
