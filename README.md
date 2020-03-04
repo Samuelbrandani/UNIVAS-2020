@@ -1,7 +1,7 @@
 # PROJETO FEIRA UNIVAS 2020
 Aplicativo de consulta para os alunos da UNIVAS
 
-Desenvolvido pelos alunos de sistemas de informação
+Desenvolvido pelos alunos de sistemas de informação - 5° período
 - Samuel Alves Brandani Tenório
 - Luiz Texeira
 - Gabriel Ricieri Martines Riberio
