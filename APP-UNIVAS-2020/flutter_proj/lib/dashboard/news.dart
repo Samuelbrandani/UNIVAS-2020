@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_proj/Animations/HeroImage.dart';
+import 'package:univas_edu_sistemas/Animations/HeroImage.dart';
 import '../Animations/FadeAnimarions.dart';
 
 class News extends StatelessWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_proj/Animations/FadeAnimarions.dart';
-import 'package:flutter_proj/dashboard/message_center.dart';
-import 'package:flutter_proj/dashboard/news.dart';
-import 'package:flutter_proj/dashboard/partial_notes.dart';
-import 'package:flutter_proj/dashboard/scheduled_tests.dart';
+import 'package:univas_edu_sistemas/Animations/FadeAnimarions.dart';
+import 'package:univas_edu_sistemas/dashboard/message_center.dart';
+import 'package:univas_edu_sistemas/dashboard/news.dart';
+import 'package:univas_edu_sistemas/dashboard/partial_notes.dart';
+import 'package:univas_edu_sistemas/dashboard/scheduled_tests.dart';
 
 class Dashboard extends StatefulWidget {
   @override

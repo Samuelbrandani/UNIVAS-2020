@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_proj/Animations/FadeAnimarions.dart';
+import 'package:univas_edu_sistemas/Animations/FadeAnimarions.dart';
 
 class ScheduledTests extends StatelessWidget {
   final Color _textColor = Colors.grey[900];

@@ -1,7 +1,7 @@
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_proj/Animations/FadeAnimarions.dart';
-import 'package:flutter_proj/dashboard/dashborad.dart';
+import 'package:univas_edu_sistemas/Animations/FadeAnimarions.dart';
+import 'package:univas_edu_sistemas/dashboard/dashborad.dart';
 
 void main() => runApp(MyApp());
 
