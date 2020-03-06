@@ -35,7 +35,7 @@ class _HeroImageState extends State<HeroImage> {
                   children: <Widget>[
                     Padding(
                       padding:
-                          EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 40),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

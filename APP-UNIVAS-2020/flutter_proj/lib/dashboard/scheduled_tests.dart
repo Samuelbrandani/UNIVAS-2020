@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:univas_edu_sistemas/Animations/FadeAnimarions.dart';
+import 'package:univas_edu_sistemas/fake-service/testsService.dart';
+import 'package:univas_edu_sistemas/model/materia.dart';
 
 class ScheduledTests extends StatelessWidget {
+
   final Color _textColor = Colors.grey[900];
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,7 @@ class ScheduledTests extends StatelessWidget {
                   0.50,
                   SizedBox(
                     child: Text(
-                      "Procas agendadas",
+                      "Notas parciais",
                       style: TextStyle(
                           color: _textColor,
                           fontSize: 20,
@@ -28,7 +31,76 @@ class ScheduledTests extends StatelessWidget {
             )
           ],
         ),
+        Container(
+          padding: EdgeInsets.all(15),
+          child: Column(
+            children: <Widget>[
+              FadeAnimation(
+                  0.60,
+                  makeItem(
+                      image: 'assets/images/one_news.jpg',
+                      tag: '1',
+                      context: context)),
+              FadeAnimation(
+                  0.65,
+                  makeItem(
+                      image: 'assets/images/two_news.jpg',
+                      tag: '2',
+                      context: context)),
+              FadeAnimation(
+                  0.70,
+                  makeItem(
+                      image: 'assets/images/tree_news.jpg',
+                      tag: '3',
+                      context: context)),
+            ],
+          ),
+        )
       ],
     ));
+  }
+
+  Widget makeItem({image, tag, context}) {
+    return Hero(
+      tag: tag,
+      child: GestureDetector(
+        onTap: () {
+          // Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //         builder: (context) => HeroImage(
+          //               image: image,
+          //             )));
+        },
+        child: Container(
+          // height: 250,
+          width: double.infinity,
+          padding: EdgeInsets.all(20),
+          margin: EdgeInsets.only(bottom: 20),
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                ListView.builder(itemBuilder: (context, index) {}),
+                Text("teste"),
+                Text("teste"),
+                Text("teste"),
+                Text("teste"),
+              ],
+            ),
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Colors.white,
+              // image:
+              //     DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.grey[400],
+                    blurRadius: 10,
+                    offset: Offset(0, 10))
+              ]),
+        ),
+      ),
+    );
   }
 }

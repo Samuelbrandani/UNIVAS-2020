@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:univas_edu_sistemas/Animations/FadeAnimarions.dart';
+import 'package:univas_edu_sistemas/dashboard/frequency.dart';
 import 'package:univas_edu_sistemas/dashboard/message_center.dart';
 import 'package:univas_edu_sistemas/dashboard/news.dart';
-import 'package:univas_edu_sistemas/dashboard/partial_notes.dart';
 import 'package:univas_edu_sistemas/dashboard/scheduled_tests.dart';
 
 class Dashboard extends StatefulWidget {
@@ -28,41 +27,18 @@ class _DashboardState extends State<Dashboard>
   @override
   Widget build(BuildContext context) {
     final String _alunoNome = 'Samuel';
-    final Color _textColor = Colors.grey[900];
     return Scaffold(
+        appBar: AppBar(
+          title: Text("Bem vindo $_alunoNome"),
+          backgroundColor: Colors.green[700],
+        ),
         backgroundColor: Colors.white,
         key: _drawerKey,
         body: SingleChildScrollView(
             child: SafeArea(
           child: Container(
             child: Column(
-              children: <Widget>[
-                Container(
-                  padding: EdgeInsets.all(30),
-                  child: Row(
-                    children: <Widget>[
-                      IconButton(
-                        icon: Icon(Icons.menu),
-                        color: Colors.black,
-                        onPressed: () {
-                          _drawerKey.currentState.openDrawer();
-                        },
-                      ),
-                      FadeAnimation(
-                        0.40,
-                        Text(
-                          "Bem vindo $_alunoNome",
-                          style: TextStyle(
-                              color: _textColor,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                _controllerPageView
-              ],
+              children: <Widget>[SizedBox(height: 30), _controllerPageView],
             ),
           ),
         )),
@@ -95,16 +71,7 @@ class _DashboardState extends State<Dashboard>
                 },
               ),
               ListTile(
-                title: Text('Notas parciais'),
-                onTap: () {
-                  setState(() {
-                    _controllerPageView = PartialNotes();
-                    Navigator.of(context).pop();
-                  });
-                },
-              ),
-              ListTile(
-                title: Text('Provas Agendadas'),
+                title: Text('Provas'),
                 onTap: () {
                   setState(() {
                     _controllerPageView = ScheduledTests();
@@ -116,7 +83,7 @@ class _DashboardState extends State<Dashboard>
                 title: Text('Frequência'),
                 onTap: () {
                   setState(() {
-                    _controllerPageView = PartialNotes();
+                    _controllerPageView = Frequency();
                     Navigator.of(context).pop();
                   });
                 },

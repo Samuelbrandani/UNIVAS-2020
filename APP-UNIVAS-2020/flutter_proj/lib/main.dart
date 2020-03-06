@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flare Welcome',
+      debugShowCheckedModeBanner: false,
+      title: 'Univas Alunos',
       home: SplashScreen(
-        'assets/animations/univas_3.flr',
+        'assets/animations/univas_5.flr',
         HomePage(),
         startAnimation: 'intro',
         backgroundColor: Colors.white,
@@ -87,16 +88,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             fit: BoxFit.cover)),
                   )),
             ),
-            FadeAnimation(
-                1,
-                Container(
-                  width: width,
-                  height: 400,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/univas-logo.png'),
-                          fit: BoxFit.contain)),
-                )),
             Container(
               padding: EdgeInsets.all(20.0),
               child: Column(
@@ -115,6 +106,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             color: Colors.white),
                         child: Column(
                           children: <Widget>[
+                            FadeAnimation(
+                                1,
+                                Container(
+                                    child: Image(
+                                        image: AssetImage(
+                                            'assets/images/univas-logo-original.png')))),
                             Container(
                               decoration: BoxDecoration(
                                   border: Border(
@@ -153,7 +150,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                               padding: EdgeInsets.all(15),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50),
-                                  color: Colors.blue[800]),
+                                  color: Colors.green[700]),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,
